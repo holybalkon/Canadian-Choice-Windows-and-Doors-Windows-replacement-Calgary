@@ -731,15 +731,29 @@
 
 
 
-<section class="section">
+<style>
+.communities__list{list-style:none;margin:0 0 40px;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:20px 24px}
+.communities__list li{display:flex;align-items:center;gap:14px;font-weight:600;color:#000}
+.communities__list li::before{content:"";flex:none;width:20px;height:20px;box-sizing:border-box;border:2px solid #2f80c9;background:radial-gradient(#2f80c9 0 0) center/8px 8px no-repeat}
+.communities__text{max-width:640px;margin:0 auto;font-size:1.25rem;font-weight:600;line-height:1.6}
+@media(max-width:768px){.communities__list{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.communities__list{grid-template-columns:1fr}}
+</style>
+<section class="section _gray">
 <div class="we-do grid-container section__block">
-        <p class="section__title text-center">Serving Calgary and Surrounding Communities</p>
+        <h2 class="section__title text-center">Serving Calgary and Surrounding Communities</h2>
         <div class="grid-x grid-margin-x">
             <div class="cell medium-12 _mb align-self-middle">
                 <p>We work with homeowners across Calgary, including Woodlands, Woodbine, Southwood, Lakeview and the surrounding southwest neighbourhoods, as well as nearby communities such as Cochrane, Airdrie and Okotoks.</p>
                 <p>Homes in and around Calgary face dry air, strong winds, and significant temperature swings, which makes proper insulation and precise installation important. Our local team understands these conditions and selects window configurations designed to perform reliably year-round.</p>
             </div>
         </div>
+        <ul class="communities__list">
+            <li>Airdrie</li><li>Chestermere</li><li>High River</li><li>Strathmore</li>
+            <li>Bragg Creek</li><li>Cochrane</li><li>Langdon</li>
+            <li>Carseland</li><li>Crossfield</li><li>Okotoks</li>
+        </ul>
+        <p class="communities__text text-center">Working directly with homeowners in Calgary and communities including, but not limited to: Okotoks, Cochrane, Airdrie, Chestermere, High River, Olds, Innisfail, Red Deer and many more!</p>
     </div>
 </section>
 
