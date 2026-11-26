@@ -1,0 +1,45 @@
+<!-- Consultation request form -->
+<div class="cf-modal" id="cf-modal" role="dialog" aria-modal="true" aria-labelledby="cf-title" hidden>
+    <div class="cf-modal__backdrop" data-cf-close></div>
+    <div class="cf-modal__panel" tabindex="-1">
+        <button type="button" class="cf-modal__close" data-cf-close aria-label="Close form">&times;</button>
+        <h2 class="cf-modal__title" id="cf-title">Request a FREE Consultation</h2>
+
+        <form class="cf-form" id="cf-form" novalidate>
+
+            <div class="cf-field">
+                <label for="cf-name">Name:</label>
+                <input type="text" id="cf-name" name="name" autocomplete="name" required>
+            </div>
+            <div class="cf-field">
+                <label for="cf-phone">Phone:</label>
+                <input type="tel" id="cf-phone" name="phone" autocomplete="tel" inputmode="tel" required>
+            </div>
+            <div class="cf-field">
+                <label for="cf-email">Email:</label>
+                <input type="email" id="cf-email" name="email" autocomplete="email" required>
+            </div>
+            <div class="cf-field">
+                <label for="cf-postal">Postal Code:</label>
+                <input type="text" id="cf-postal" name="postal_code" autocomplete="postal-code" maxlength="7" required>
+            </div>
+            <div class="cf-field">
+                <label for="cf-windows">How many windows to replace:</label>
+                <input type="text" id="cf-windows" name="windows_count" inputmode="numeric" required>
+            </div>
+            <div class="cf-field">
+                <label for="cf-message">Describe your needs:</label>
+                <textarea id="cf-message" name="message" rows="5"></textarea>
+            </div>
+
+            <p class="cf-status" id="cf-status" role="status" aria-live="polite"></p>
+
+            <div class="cf-actions">
+                <button type="submit" class="cf-submit">Request Consultation</button>
+            </div>
+
+            <p class="cf-consent">* By providing your email and phone number above, you consent to receive communications from Windows Replacement Calgary with promotional information regarding company events, news, and other applicable announcements. You may withdraw this consent by unsubscribing at any time.</p>
+        </form>
+    </div>
+</div>
+<script src="js/contact-form.js" defer></script>
